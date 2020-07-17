@@ -9,6 +9,7 @@ Type N-S-W-E to move your character.
 ## Instructions
 
 ### `npm install`
+Install the dependencies needed to run.<br />
 
 ### `npm start`
 
