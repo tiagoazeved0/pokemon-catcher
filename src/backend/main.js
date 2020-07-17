@@ -9,7 +9,9 @@ export function startGame() {
 
   const player = new Player();
 
-  player.userInput();
+  if (!player.userInput()) {
+    return;
+  }
   player.validateInput();
 
   catchPokemon(player)

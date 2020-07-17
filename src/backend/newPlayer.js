@@ -8,11 +8,13 @@ export class Player {
 
   userInput() {
     this.answer = prompt(
-      "Welcome to Pokemon Catcher, type here your movement sequence:")
+      "Welcome to Pokemon Catcher, type here your movement sequence:");
 
       if (this.answer == null) {
+        return false;
       }
-      this.answer.toUpperCase();
+      this.answer = this.answer.toUpperCase();
+      return true;
       }
 
   validateInput() {

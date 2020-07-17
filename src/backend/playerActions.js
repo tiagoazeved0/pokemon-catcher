@@ -27,7 +27,7 @@ export function catchPokemon(Player) {
         
         alert('You caught a Level ' + level + ' ' + poke + ' on Route ' + Object.values(Player.currentPosition) + '!\n')
     } else {
-        alert('You have been in this Route already!')
+        alert('You have been on Route ' + Object.values(Player.currentPosition) + ' already!')
     }
 }
 
